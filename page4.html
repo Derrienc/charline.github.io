@@ -7,22 +7,39 @@
 		<meta charset="utf-8"/>
 		<title>Page 4</title>
 	</head>
-		<body>
-			<div class="w3-container">
-				<div class="w3-bar w3-black">
-					<a href="index.html" class="w3-bar-item w3-button">Accueil</a>
-					<a href="page1.html" class="w3-bar-item  w3-button">Intrigue</a>
-					<a href="page2.html" class="w3-bar-item w3-button">Personnages</a>
-					<a href="page3.html" class="w3-bar-item w3-button">Monstres</a>
-					<a href="page4.html" class="w3-bar-item w3-text-red w3-button">Acteurs</a>
-					<a href="page5.html" class="w3-bar-item w3-button">Tournage</a>
-					<a href="Images1.html" class="w3-bar-item w3-button">Images</a>
-					<a href="page6.html" class="w3-bar-item w3-button">Commercial</a>
+	<body>
+		<div class="mobile-container">
+			<!-- Top Navigation Menu -->
+			<div class="topnav">
+  				<div class="w3-container">
+					<h1><strong>STRANGER THINGS</strong></h1>
 				</div>
+				<div id="myLinks">
+    					<a href="index.html" class="w3-bar-item w3-button">Accueil</a>
+    					<a href="page1.html" class="w3-bar-item w3-button">Intrigue</a>
+    					<a href="page2.html" class="w3-bar-item w3-button">Personnages</a>
+    					<a href="page3.html" class="w3-bar-item w3-button">Monstres</a>
+    					<a href="page4.html" class="w3-bar-item w3-text-red w3-button">Acteurs</a>
+    					<a href="page5.html" class="w3-bar-item w3-button">Tournage</a>
+    					<a href="Images1.html" class="w3-bar-item w3-button">Images</a>
+    					<a href="page6.html" class="w3-bar-item w3-button">Commercial</a>
+  				</div>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    					<i class="fa fa-bars"></i>
+  				</a>
 			</div>
-			<div class="w3-container w3-red w3-center">
-				<h1>Acteurs des différents personnages</h1>
-			</div>
+
+			<script>
+				function myFunction() {
+  					var x = document.getElementById("myLinks");
+  					if (x.style.display === "block") {
+    						x.style.display = "none";
+ 					} else {
+    						x.style.display = "block";
+  					}
+				}
+			</script>
+			
 			<h4><a href="Images1.html" >Millie Bobby Brown</a></h4>
 			<p>Née le 19 février 2004 à Marbella, elle commence sa carrière en 2013 dans la série 
 			Once Upon a Time in Wonderland. Elle est connue pour son rôle dans la série STRANGER THINGS, 
