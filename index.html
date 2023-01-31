@@ -6,25 +6,46 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 		<link rel="shotcut icon" href="favicon.ico">
-		
 		<meta charset="utf-8"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	</head>
 		<body>
-			<div class="w3-container">
-				<div class="w3-bar w3-black">
-					<a href="index.html" class="w3-bar-item w3-text-red w3-button">Accueil</a>
-					<a href="page1.html" class="w3-bar-item w3-button">Intrigue</a>
-					<a href="page2.html" class="w3-bar-item w3-button">Personnages</a>
-					<a href="page3.html" class="w3-bar-item w3-button">Monstres</a>
-					<a href="page4.html" class="w3-bar-item w3-button">Acteurs</a>
-					<a href="page5.html" class="w3-bar-item w3-button">Tournage</a>
-					<a href="Images1.html" class="w3-bar-item w3-button">Images</a>
-					<a href="page6.html" class="w3-bar-item w3-button">Commercial</a>
-				</div>
-			</div>
-			<div class="w3-container w3-red w3-center">
+						<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <div class="w3-container">
 				<h1><strong>STRANGER THINGS</strong></h1>
 			</div>
+  <div id="myLinks">
+    <a href="index.html" class="w3-bar-item w3-text-red w3-button">Accueil</a>
+    <a href="page1.html" class="w3-bar-item w3-button">Intrigue</a>
+    <a href="page2.html" class="w3-bar-item w3-button">Personnages</a>
+    <a href="page3.html" class="w3-bar-item w3-button">Monstres</a>
+    <a href="page4.html" class="w3-bar-item w3-button">Acteurs</a>
+    <a href="page5.html" class="w3-bar-item w3-button">Tournage</a>
+    <a href="Images1.html" class="w3-bar-item w3-button">Images</a>
+    <a href="page6.html" class="w3-bar-item w3-button">Commercial</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 			
 			<h3>Ce sites va vous parler de STRANGER THINGS.<br> STRANGER THINGS est une série Netflix international. STRANGER THINGS est une
 			série dramatique d'horreur de science-fiction.</h3>
