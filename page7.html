@@ -45,6 +45,37 @@
 			}
 			</script>
 			
+			<?php
+			// Vérifier si le formulaire a été soumis
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			// Récupérer les données du formulaire
+			$nom = $_POST["nom"];
+			$email = $_POST["email"];
+			$commentaire = $_POST["commentaire"];
+			// Validation des données (vous pouvez ajouter vos propres règles de validation ici)
+			// Enregistrement du commentaire dans une base de données ou dans un fichier, etc.
+			// Exemple de code pour enregistrer dans un fichier
+			$fichier = fopen("commentaires.txt", "a");
+			fwrite($fichier, "Nom: " . $nom . "\n");
+			fwrite($fichier, "Email: " . $email . "\n");
+			fwrite($fichier, "Commentaire: " . $commentaire . "\n\n");
+			fclose($fichier);
+			// Affichage d'un message de succès
+			echo "Merci pour votre commentaire!";
+			}
+			?>
+			<h2>Formulaire de Commentaires</h2>
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);
+			?>
+			<label for="nom">Nom:</label>
+			<input type="text" name="nom" required><br>
+			<label for="email">Email:</label>
+			<input type="email" name="email" required><br>
+			<label for="commentaire">Commentaire:</label><br>
+			<textarea name="commentaire" rows="5" cols="40" required></textarea><br>
+			<input type="submit" value="Soumettre">
+			</form>
+			
 			<div class="w3-display-bottom w3-left">
 				<div class="w3-container w3-black">
 					<div class="w3-bar w3-round">
