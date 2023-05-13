@@ -55,7 +55,7 @@
 			// Validation des données (vous pouvez ajouter vos propres règles de validation ici)
 			// Enregistrement du commentaire dans une base de données ou dans un fichier, etc.
 			// Exemple de code pour enregistrer dans un fichier
-			$fichier = fopen("commentaires.txt", "a");
+			$fichier = fopen("styles/commentaires.txt", "a");
 			fwrite($fichier, "Nom: " . $nom . "\n");
 			fwrite($fichier, "Email: " . $email . "\n");
 			fwrite($fichier, "Commentaire: " . $commentaire . "\n\n");
