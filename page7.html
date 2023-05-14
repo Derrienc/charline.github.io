@@ -12,8 +12,6 @@
 	</head>
 		<body>
 		<div class="mobile-container">
-
-			<!-- Top Navigation Menu -->
 			<div class="topnav">
   				<div class="w3-container w3-red w3-center">
 					<h1>Formulaire</h1>
@@ -71,10 +69,13 @@
     				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         			<label for="nom">Nom:</label>
         			<input type="text" name="nom" required><br><br>
+					
         			<label for="email">Email:</label>
         			<input type="email" name="email" required><br><br>
+					
         			<label for="commentaire">Commentaire:</label><br>
         			<textarea name="commentaire" rows="5" cols="40" required></textarea><br>
+					
 			        <input type="submit" value="Soumettre">
     				</form>
 			
