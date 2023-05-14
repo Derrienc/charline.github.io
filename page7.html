@@ -45,7 +45,7 @@
 			
 			<?php
     			// Vérifier si le formulaire a été soumis
-    			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    			
         			// Récupérer les données du formulaire
         			$nom = $_POST["nom"];
         			$email = $_POST["email"];
@@ -62,7 +62,7 @@
         			// Affichage d'un message de succès
         			echo "Merci pour votre commentaire!";
         			exit(); // Arrêter l'exécution du script après l'affichage du message
-    				}
+    				
     				?>
 
     				<h2>Commentaires</h2>
