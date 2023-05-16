@@ -1,11 +1,11 @@
 <?php
     			// Vérifier si le formulaire a été soumis
-    			
+    			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				
         			// Récupérer les données du formulaire
         			$nom = $_POST["nom"];
         			$email = $_POST["email"];
         			$commentaire = $_POST["commentaire"];
-        			// Validation des données (vous pouvez ajouter vos propres règles de validation ici)
 			        // Enregistrement du commentaire dans une base de données ou dans un fichier, etc.
         			// Exemple de code pour enregistrer dans un fichier
        	 			$fichier = fopen("commentaires.txt", "a");
@@ -17,5 +17,5 @@
         			// Affichage d'un message de succès
         			echo "Merci pour votre commentaire!";
         			exit(); // Arrêter l'exécution du script après l'affichage du message
-    				
+			}
     				?>
