@@ -7,9 +7,10 @@
         			$commentaire = $_POST["commentaire"];
 			        // Enregistrement du commentaire dans un fichier
        	 			fopen("commentaires.txt", "a");
-        			fwrite("Nom: " . $nom . "\n");
-        			fwrite("Email: " . $email . "\n");
-        			fwrite("Commentaire: " . $commentaire . "\n\n\n");
+				fwrite("Nom:");
+        			//fwrite("Nom: " . $nom . "\n");
+        			//fwrite("Email: " . $email . "\n");
+        			//fwrite("Commentaire: " . $commentaire . "\n\n\n");
         			fclose("commentaires.txt");
         			// Affiche un message de succès, si commentaires bien enregistrer dans le fichier
         			echo "Merci pour votre commentaire!";
