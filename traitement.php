@@ -6,10 +6,12 @@
         			$email = $_POST["email"];
         			$commentaire = $_POST["commentaire"];
 			        // Enregistrement du commentaire dans un fichier
-       	 			fopen("commentaires.txt");
-        			fwrite("Nom: " . $nom . "\n");
-        			fwrite("Email: " . $email . "\n");
-        			fwrite("Commentaire: " . $commentaire . "\n\n\n");
-        			fclose("commentaires.txt");
+       	 			$fichier = fopen("commentaires.txt", "a");
+        			fwrite($fichier, "Nom: " . $nom . "\n");
+        			fwrite($fichier, "Email: " . $email . "\n");
+        			fwrite($fichier, "Commentaire: " . $commentaire . "\n\n\n");
+        			fclose($fichier);
+				
+				echo "Merci pour votre commentaire!";
 			}
     				?>
