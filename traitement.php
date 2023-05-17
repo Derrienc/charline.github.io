@@ -1,6 +1,4 @@
-<?php
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
+<!-- <?php
     	// Vérifier si le formulaire a été soumis
     	if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Récupérer les données du formulaire
@@ -16,4 +14,4 @@
 			
 		echo "Merci pour votre commentaire!";
 	}
-?>
+?> -->
