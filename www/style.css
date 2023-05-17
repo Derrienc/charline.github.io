@@ -1,0 +1,44 @@
+body
+{
+	background-color: black;
+	color: white;
+}
+h1
+{
+	color: black;
+}
+h3, h4
+{
+	color: red;
+}
+.topnav {
+  overflow: hidden;
+  background-color: red;
+  position: relative;
+}
+
+.topnav #myLinks {
+  background-color : grey;
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: red;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
